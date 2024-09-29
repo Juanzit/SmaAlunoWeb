@@ -18,7 +18,7 @@ export default ({}) => {
             <Text style={[estilo.tituloH333px, estilo.textoCorSecundaria, style.Montserrat, {textAlign: 'center'}]}>CÓDIGO DE RECUPERAÇÃO</Text>
             <Text style={[estilo.textoCorSecundaria,{textAlign: 'center'}, estilo.textoP16px, style.Montserrat]}>Escolha uma maneira de contato a qual usaremos para enviar o código de recuperação de senha.</Text>
             </View>
-            <TouchableOpacity style={[style.botaoEnviarEmail]} onPress={()=>navigation.navigate('Recuperar senha tela 3')}>
+            <TouchableOpacity style={[style.botaoEnviarEmail]} onPress={()=>router.push('./recuperarsenhatela3.js')}>
                 <AntDesign name="mail" size={70} color="#182128" />    
                     <View style={style.textoBotao}>
                     <Text style={[estilo.textoP16px, estilo.textoCorSecundaria, estilo.tituloH619px]}>

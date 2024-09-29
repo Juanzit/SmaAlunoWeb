@@ -4,7 +4,7 @@ import estilo from "./estilo"
 import RadioBotao from "./radiobotao"
 import Botao from "./botao"
 import {useFonts} from 'expo-font'
-import { novoAluno } from "./navegacaologinscreen/cadastroscreen"
+import { novoAluno } from "./cadastroscreen"
 import { Parq } from "../classes/Parq"
 import { useRouter } from "expo-router";
 
@@ -252,7 +252,7 @@ export default ({}) => {
                        >
                         </RadioBotao>
                     </View>
-                    <TouchableOpacity style={[estilo.botao, estilo.corPrimaria]} onPress={()=>{router.push('/app/anamnese'); console.log(parqDoAluno)}}>
+                    <TouchableOpacity style={[estilo.botao, estilo.corPrimaria]} onPress={()=>{router.push('./anamnese'); console.log(parqDoAluno)}}>
                         <Text style={[estilo.textoCorLight, estilo.tituloH619px]}>RESPONDER PARQ</Text>
                     </TouchableOpacity>
                     <Text>

@@ -19,7 +19,7 @@ export default ({}) => {
             </View>
             <InputTexto texto='CÓDIGO'></InputTexto>
             <View style={{marginTop: '60%'}}>
-            <TouchableOpacity style={[estilo.botao, estilo.corPrimaria]} onPress={()=>navigation.navigate('Recuperar senha tela 4')}>
+            <TouchableOpacity style={[estilo.botao, estilo.corPrimaria]} onPress={()=>router.push('./recuperarsenhatela4.js')}>
                 <Text style={[estilo.textoCorLight, estilo.tituloH619px]}> PROSSEGUIR</Text>
             </TouchableOpacity>
             </View>

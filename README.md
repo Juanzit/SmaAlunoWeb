@@ -1,9 +1,9 @@
-# SMA-Aluno
+# SMA-Aluno Web
 <!-- Copie e cole este código no seu arquivo README.md -->
 
-## Desenvolvimento do ShapeMeApp
+## Desenvolvimento do ShapeMeApp Web
 
-O desenvolvimento do aplicativo ShapeMeApp foi realizado utilizando a tecnologia React Native 🚀. Esta escolha proporciona uma experiência de usuário fluida e eficiente, garantindo uma navegação intuitiva e desempenho de alta qualidade em diferentes plataformas móveis.
+O desenvolvimento do aplicativo ShapeMeApp para Web foi realizado utilizando a tecnologia React Native 🚀. Esta escolha proporciona uma experiência de usuário fluida e eficiente, garantindo uma navegação intuitiva e desempenho de alta qualidade em diferentes plataformas móveis.
 
 Para armazenamento local de dados, implementamos o Async Storage 🔄, permitindo que as informações dos usuários, como suas fichas de treino personalizadas, sejam rapidamente acessadas, mesmo offline. Isso proporciona uma experiência contínua, sem depender exclusivamente da conectividade à internet.
 

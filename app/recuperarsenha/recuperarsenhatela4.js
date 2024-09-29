@@ -23,7 +23,7 @@ export default ({}) => {
                 <Text style={[estilo.textoCorSecundaria, estilo.textoP16px, style.Montserrat]}>Nova senha:</Text>
                 <InputTexto texto='Senha'></InputTexto>
             </View>
-            <TouchableOpacity style={[estilo.botao, estilo.corPrimaria]} onPress={()=>navigation.navigate('Modal Success Senha')}>
+            <TouchableOpacity style={[estilo.botao, estilo.corPrimaria]} onPress={()=>router.push('../home/modalsuccess/modalsuccessrecuperarsenha.js')}>
                 <Text style={[estilo.textoCorLight, estilo.tituloH619px]}>ALTERAR SENHA</Text>
             </TouchableOpacity>
         </SafeAreaView>

@@ -6,7 +6,7 @@ import { useFonts } from 'expo-font'
 import { CheckboxUmPorVez, CheckMultiplos, CheckboxIndividual } from "../checkbox"
 import BotaoSelect from "../botaoselect"
 import { Anamnese } from "../../classes/Anamnese"
-import { novoAluno, enderecoNovoAluno } from "../navegacaologinscreen/cadastroscreen"
+import { novoAluno, enderecoNovoAluno } from "../cadastroscreen"
 import { parqDoAluno } from "../parq"
 import { doc, setDoc, collection, addDoc } from "firebase/firestore";
 import { firebase, firebaseBD } from "../configuracoes/firebaseconfig/config"
@@ -143,7 +143,7 @@ export default ({ }) => {
     firebase.auth().createUserWithEmailAndPassword(novoAluno.getEmail(), novoAluno.getSenha())
       .then((userCredential) => {
         criarUsuario()
-        router.push("Concluir cadastro")
+        router.push("../boasvindasscreen")
 
         console.log(userCredential);
       })

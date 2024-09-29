@@ -2,7 +2,7 @@
   "expo": {
     "name": "SMAAluno",
     "slug": "SMAAluno",
-    "version": "2.3.1",
+    "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -27,7 +27,9 @@
       "package": "com.gustavomatoi.SMAAluno"
     },
     "web": {
-      "output": "static"
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
     },
     "extra": {
       "eas": {
@@ -36,6 +38,9 @@
     },
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
   }
 }

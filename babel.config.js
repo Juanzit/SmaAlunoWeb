@@ -11,6 +11,6 @@
 module.exports = function (api) {
   api.cache(true);
   return {
-    presets: ["babel-preset-expo"], // Utilizando apenas o preset correto
+    presets: ['babel-preset-expo']
   };
 };

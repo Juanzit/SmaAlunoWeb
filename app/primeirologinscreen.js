@@ -3,7 +3,7 @@ import { Text, SafeAreaView, StyleSheet, TouchableOpacity } from "react-native"
 import Logo from './logo'
 import estilo from "./estilo"
 import Botao from "./botao"
-import { novoAluno } from "./navegacaologinscreen/cadastroscreen"
+import { novoAluno } from "./cadastroscreen"
 import { useRouter } from "expo-router";
 
 export default ({}) => {
@@ -18,7 +18,7 @@ export default ({}) => {
             style={[estilo.textoCorDanger, estilo.textoP16px, style.textoAlinhado]}
              numberOfLines={2}
              >Para montarmos o seu treino precisamos de informações.</Text>
-            <TouchableOpacity style={[style.botaoPARQANAMNESE, estilo.corSecundaria]} onPress={() => navigation.navigate('PARQ')} >
+            <TouchableOpacity style={[style.botaoPARQANAMNESE, estilo.corSecundaria]} onPress={() => router.push('./parq')} >
                 <Text style={[estilo.textoCorLightMais1, estilo.tituloH619px]}>PAR-Q E ANAMNESE</Text>
             </TouchableOpacity>
         </SafeAreaView>
