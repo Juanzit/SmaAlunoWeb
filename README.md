@@ -1,22 +1,21 @@
 # SMA-Aluno Web
-<!-- Copie e cole este código no seu arquivo README.md -->
 
-## Desenvolvimento do ShapeMeApp Web
+## Desenvolvimento da Versão Web do SMA-Aluno
 
-O desenvolvimento do aplicativo ShapeMeApp para Web foi realizado utilizando a tecnologia React Native 🚀. Esta escolha proporciona uma experiência de usuário fluida e eficiente, garantindo uma navegação intuitiva e desempenho de alta qualidade em diferentes plataformas móveis.
+A versão web do SMA-Aluno foi desenvolvida utilizando o React Native com o Expo Router para gerenciar a navegação entre telas de forma mais eficiente e organizada. O Expo Router facilita a implementação de rotas em projetos React Native que visam suporte tanto para dispositivos móveis quanto para a web, proporcionando uma experiência de navegação fluida e simples em ambas as plataformas.
 
-Para armazenamento local de dados, implementamos o Async Storage 🔄, permitindo que as informações dos usuários, como suas fichas de treino personalizadas, sejam rapidamente acessadas, mesmo offline. Isso proporciona uma experiência contínua, sem depender exclusivamente da conectividade à internet.
+## Tecnologias Utilizadas
 
-Na gestão e análise dos dados, integramos o Firebase 🔥, uma plataforma robusta que oferece recursos avançados de armazenamento em nuvem, autenticação segura e atualizações em tempo real. Isso garante que as informações do usuário estejam sempre atualizadas e acessíveis de forma segura.
+React Native com Expo Router: Permite a criação de um aplicativo web responsivo e moderno, mantendo a compatibilidade com a versão mobile do SMA-Aluno.
+Expo Router: Substitui a navegação tradicional com React Navigation, fornecendo uma estrutura simplificada e mais robusta para projetos com múltiplas rotas.
+Alterações Principais:
+Remoção do AsyncStorage: A versão web não utiliza mais o AsyncStorage para o armazenamento local de dados. Todas as informações são armazenadas diretamente no backend, garantindo que os dados do usuário estejam sempre sincronizados, independentemente do dispositivo utilizado.
+Remoção do NetInfo: O NetInfo também foi removido, já que a versão web depende exclusivamente da conectividade do navegador para funcionar.
+Recursos Principais:
+Interface de Avaliações e Fichas: O usuário pode acessar suas avaliações físicas e fichas diretamente através da plataforma, permitindo o acompanhamento contínuo do progresso acadêmico.
 
-### Recursos Principais:
+Design Responsivo: O layout da versão web foi projetado para se adaptar a diferentes tamanhos de tela, garantindo uma boa experiência de usuário em dispositivos móveis, tablets e computadores.
 
-- **Ficha de Treino Personalizada 🏋️‍♂️:** O ShapeMeApp permite aos usuários criar e acessar fichas de treino personalizadas, adaptadas às suas metas e preferências específicas.
+Integração Simplificada com Back-end: Todos os dados são gerenciados diretamente pelo servidor, mantendo a segurança e integridade das informações dos usuários sem depender de armazenamento local.
 
-- **Gráficos de Acompanhamento 📊:** Oferecemos gráficos visuais e intuitivos para acompanhar o progresso do usuário ao longo do tempo. Esses gráficos fornecem uma visão clara e motivadora do desempenho e das melhorias alcançadas.
-
-- **Serviço de Montagem de Fichas 🤖:** Contamos com um serviço inteligente de montagem de fichas de treino, que utiliza algoritmos avançados para criar rotinas personalizadas com base nas metas individuais, nível de condicionamento e preferências do usuário.
-
-- **Realização de Avaliação Física 📏:** O ShapeMeApp facilita a realização de avaliações físicas detalhadas. Os usuários podem monitorar métricas importantes, como peso, percentual de gordura corporal, e outros indicadores de saúde.
-
-Ao combinar a flexibilidade do React Native, a eficiência do Async Storage e a potência do Firebase, o ShapeMeApp oferece uma plataforma abrangente e integrada para aprimorar a jornada de condicionamento físico de cada usuário. Baixe agora e comece a transformação! 💪✨
+Navegação com Expo Router: A navegação entre as telas foi otimizada com o uso do Expo Router, proporcionando uma experiência rápida e eficiente. Os usuários podem acessar suas fichas, avaliações e outras funcionalidades com um sistema de rotas organizado.
