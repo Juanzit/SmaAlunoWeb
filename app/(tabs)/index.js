@@ -3,7 +3,7 @@ import { Alert, Text, View } from 'react-native';
 import * as Progress from 'react-native-progress';
 import { collection, getDocs, getFirestore, setDoc, doc } from 'firebase/firestore';
 import estilo from '../estilo';
-import { useRouter } from "expo-router";
+import { useLocalSearchParams, useRouter } from "expo-router";
 import { Redirect } from 'expo-router';
 
 export default function Routes({  }) {

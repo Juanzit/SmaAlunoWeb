@@ -31,7 +31,7 @@ export default function LoginScreen() {
   const handleLogin = () => {
     firebase.auth().signInWithEmailAndPassword(email, password)
       .then((userCredential) => {
-        router.replace({'(tabs)'});        
+        router.replace('(tabs)');        
       })
       .catch((error) => {
         let mensagemDeErro = '';
